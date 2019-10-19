@@ -1,4 +1,5 @@
 # contrast-ratio
+[Priview](http://coolyang.xyz/contrast-preview/index.html)
 
 ## Project setup
 ```
