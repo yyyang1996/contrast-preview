@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "color": "^3.1.2",
+    "copy-to-clipboard": "^3.2.0",
     "core-js": "^3.1.2",
-    "vue": "^2.6.10",
-    "vue-swatches": "^1.0.4"
+    "v-tooltip": "^2.0.2",
+    "verte": "^0.0.12",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",

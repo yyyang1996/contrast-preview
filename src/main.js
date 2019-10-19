@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
-import 'vue-swatches/dist/vue-swatches.min.css'
-Vue.config.productionTip = false
-
+import Vue from 'vue';
+import App from './App.vue';
+import VTooltip from 'v-tooltip';
+import 'verte/dist/verte.css';
+Vue.config.productionTip = false;
+Vue.use(VTooltip);
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  render: h => h(App)
+}).$mount('#app');

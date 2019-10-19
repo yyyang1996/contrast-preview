@@ -1,7 +1,7 @@
 <template>
-  <div class="page">
+  <div class="home">
     <header class="header">
-      <h1 class="title">Contrast Ratio Preview</h1>
+      <h1 class="title">Text Contrast Ratio Preview</h1>
       <div class="setting">
         <ColorPicker
           title="Background"
@@ -20,13 +20,13 @@
 
     <main class="main">
       <div class="container">
-        <Playground
+        <Preview
           :background="leftBgColor"
           :color="foreground"
         />
       </div>
       <div class="container">
-        <Playground
+        <Preview
           :background="rightBgColor"
           :color="foreground"
         />
@@ -36,17 +36,17 @@
 </template>
 
 <script>
-import Playground from './Playground';
+import Preview from './Preview';
 import ColorPicker from './ColorPicker';
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   components: {
-    Playground,
+    Preview,
     ColorPicker
   },
   data() {
     return {
-      foreground: '#1FBC9C',
+      foreground: '#1fbc9c',
       leftBgColor: '#eeeeee',
       rightBgColor: '#0b1928'
     };
@@ -56,7 +56,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-.page {
+.home {
   display: flex;
   flex-flow: column;
   width: 100%;
@@ -66,7 +66,7 @@ export default {
     width: 100%;
     height: 200px;
     color: #121212;
-    background-color: #ddccee;
+    background-color: #fafafa;
     text-align: center;
 
     .title {
